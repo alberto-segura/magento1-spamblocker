@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <NoBullShitDev_SpamBlocker>
+      <active>true</active>
+      <codePool>community</codePool>
+    </NoBullShitDev_SpamBlocker>
+  </modules>
+</config>

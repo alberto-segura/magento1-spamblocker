@@ -1,0 +1,40 @@
+<config>
+  <modules>
+    <NoBullShitDev_SpamBlocker>
+      <version>0.1.0</version>
+    </NoBullShitDev_SpamBlocker>
+  </modules>
+  <global>
+    <models>
+      <nobullshitdev_spamblocker>
+        <class>NoBullShitDev_SpamBlocker_Model</class>
+      </nobullshitdev_spamblocker>
+    </models>
+    <events>
+      <customer_save_before>
+        <observers>
+          <checkEmailDomain>
+            <type>singleton</type>
+            <class>NoBullShitDev_SpamBlocker_Model_Observer</class>
+            <method>checkEmail</method>
+          </checkEmailDomain>
+          <checkFullNameCharacters>
+            <type>singleton</type>
+            <class>NoBullShitDev_SpamBlocker_Model_Observer</class>
+            <method>checkFullNameCharacters</method>
+          </checkFullNameCharacters>
+        </observers>
+      </customer_save_before>
+
+      <controller_action_predispatch_contacts_index_post>
+            <observers>
+              <checkContactFormCharacters>
+                <type>singleton</type>
+                <class>NoBullShitDev_SpamBlocker_Model_Observer</class>
+                <method>checkContactFormCharacters</method>
+              </checkContactFormCharacters>
+            </observers>
+        </controller_action_predispatch_contacts_index_post>
+    </events>
+  </global>
+</config>

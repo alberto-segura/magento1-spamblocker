@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+  <tabs>
+    <customer translate="label" module="customer">
+      <label>Customers</label>
+      <sort_order>300</sort_order>
+    </customer>
+  </tabs>
+  <sections>
+    <customer translate="label" module="customer">
+      <groups>
+        <create_account translate="label">
+          <fields>
+            <email_blocked_domain translate="label">
+              <label>List of Email Domains Not Allowed to Register</label>
+              <comment>Emails with one of these domains will NOT be allowed to signup. example: domain.com, domain2.com, domain3.com</comment>
+              <frontend_type>text</frontend_type>
+              <sort_order>10000</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </email_blocked_domain>
+            <email_blocked_domain_error translate="label">
+              <label>Blocked Email Domain Error Message</label>
+              <frontend_type>textarea</frontend_type>
+              <sort_order>10001</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </email_blocked_domain_error>
+          </fields>
+        </create_account>
+      </groups>
+    </customer>
+  </sections>
+</config>
