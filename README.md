@@ -4,7 +4,7 @@ Have you noticed hundreds of spam emails are getting sent from your server using
 Have you seen the following domains without orders? (i.e mail.ru, yandex.ru, list.ru, bk.ru, inbox.ru, ya.ru, rambler.ru, spmi.ru, etc.).
 Well, there is a way to stop that.
 
-With this module, It is possible to block all the russian domains (or any specified domain) in the forms and I prevent emails getting sent to russian email accounts.
+With this module, It is possible to block all the russian domains (or any specified domain) in the forms and prevent emails getting sent to russian email accounts.
 
 To set the list and a notification message, you just need to set them on:
 System - Configuration - Customer - Customer Configuration
